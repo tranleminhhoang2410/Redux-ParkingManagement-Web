@@ -1,0 +1,113 @@
+.wrapper,
+.logo-and-nav,
+.social-and-login {
+    display: flex;
+    align-items: center;
+}
+
+.wrapper {
+    height: var(--default-header-height);
+    background-color: var(--white-color);
+    justify-content: space-between;
+    max-width: var(--default-layout-max-width);
+    margin: 0 auto;
+}
+
+.logo {
+    margin-right: 12px;
+}
+
+.logo-img {
+    width: 120px;
+}
+
+.nav-link {
+    .nav-link-item {
+        text-decoration: none;
+        color: var(--text-color);
+        font-size: 1.4rem;
+        font-weight: 600;
+        margin: 0 8px;
+
+        &:hover {
+            opacity: 0.4;
+        }
+    }
+}
+
+.nav-social {
+    margin-right: 16px;
+
+    .social-link {
+        font-size: 2.8rem;
+
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+
+    .social-icon {
+        margin: 0 4px;
+        font-size: 2.4rem;
+    }
+}
+
+.close-btn {
+    position: absolute;
+    right: 4px;
+    top: 4px;
+    background-color: transparent;
+    z-index: 1;
+
+    .close-btn-content {
+        font-size: 3rem;
+        font-weight: 600;
+        cursor: pointer;
+    }
+}
+
+.tab-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 16px;
+}
+
+.tabs {
+    color: var(--white-color);
+    background-color: transparent;
+}
+
+.active-tabs {
+    text-decoration: underline;
+    font-size: 2rem !important;
+    font-weight: 800 !important;
+}
+
+.content {
+    display: none;
+}
+
+.active-content {
+    display: block;
+}
+
+//Login actions
+.login-action {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+    .username-txt {
+        font-size: 1.2rem;
+        font-weight: 500;
+    }
+
+    .user-icon {
+        padding: 8px;
+        margin-left: 8px;
+        background-color: var(--primary-color);
+        font-size: 1.2rem;
+        border-radius: 50%;
+    }
+}
